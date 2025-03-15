@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
 // Initialize the OpenAI client
+// This is commented out for demo purposes but will be used in production
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const openai = new OpenAI({
   apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
 });
@@ -18,6 +20,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Create the prompt for post-mortem analysis
+    // This is commented out for demo purposes but will be used with the OpenAI integration
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const prompt = `
       You are a specialized assistant designed to create comprehensive post-mortem reports from Slack conversation logs.
       
